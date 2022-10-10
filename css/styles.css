@@ -1,0 +1,158 @@
+:root {
+    --primari-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color:  #2196F3;
+    --primari-bg-color:  #FFFFFF;
+}
+
+body {
+    color: var(--primari-text-color);
+    background-color: var(--primari-bg-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    font-family: Roboto, sans-serif;
+    
+}
+/* Logo */
+.header-logo {
+    color: #2196F3;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    font-family: Raleway, cursive;
+}
+.accent{
+    color: #212121;
+}
+.logo-footer {
+    color: #2196F3;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    font-family: Raleway, cursive;
+}
+.accent-footer {
+    color: #FFFFFF;
+}
+.addres-color {
+    background-color: #2F303A;;
+}
+
+/* none */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* site nave */
+.site-nave .link {
+    color: var(--title-text-color);
+}
+.site-nave .link:hover,
+.site-nave .link:focus {
+    color: var(--accent-color);
+}
+.site-nave .link.current {
+    color: var(--accent-color);
+}
+
+/* contacts*/
+.contacts .link {
+    color: var(--primari-text-color);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
+}
+
+/* contacts-footer */
+
+/* HERO */
+.hero {
+    background-color: #2F303A;;
+}
+
+.hero-title {
+    color: var(--primari-bg-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* stction */
+
+.section-title {
+    color:var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/* feature */
+
+.feature-list .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+.text-list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+/* team */
+
+.workers .team-list {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+}
+/* button */
+
+.button {
+    background-color: var(--accent-color);
+    color: var(--primari-bg-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* projects-list */
+
+.projects-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.text-title{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
