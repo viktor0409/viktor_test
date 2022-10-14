@@ -4,6 +4,7 @@
     --accent-color:  #2196F3;
     --primari-bg-color:  #FFFFFF;
     --cover-color:  #2F303A;
+    --color-button: #F5F4FA;
 }
 
 body {
@@ -107,6 +108,7 @@ a {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .text {
@@ -133,15 +135,33 @@ a {
 /* button */
 
 .button {
-    background-color: var(--accent-color);
-    color: var(--primari-bg-color);
+    background-color: var(--color-button);
+    color: var(--title-text-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
     font-family: Roboto, sans-serif;
 }
-
+.button:hover,
+.button:focus {
+    background-color: var(--accent-color);
+    color: var(--primari-bg-color);
+}
+.button-list {
+    color: var(--title-text-color);
+    background-color: var(--color-button);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+.button-list:hover,
+.button-list:focus {
+    background-color: var(--accent-color);
+    color: var(--primari-bg-color);
+}
 /* projects-list */
 
 .projects-title {
@@ -169,4 +189,33 @@ a {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+/* footer */
+.footer-cotacts .link {
+    color: var(--primari-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.footer-cotacts .link:hover,
+.footer-cotacts .link:focus {
+    color: var(--accent-color);
+}
+
+.footer-cotacts .link-addres {
+    color: var(--primari-bg-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.footer-cotacts .link-addres:hover,
+.footer-cotacts .link-addres:focus {
+color: var(--accent-color);
 }
