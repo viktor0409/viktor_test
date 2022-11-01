@@ -36,7 +36,7 @@ img {
 }
 
 .container {
-    width: 1230px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -67,8 +67,17 @@ img {
 .accent-footer {
     color: var(--primari-bg-color);
 }
+
+/*address*/
+address {
+    padding-top: 20px;
+}
+
+
 .addres-color {
     background-color: var(--cover-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /* none */
@@ -102,10 +111,10 @@ a {
     margin-right: 50px;
 }
 
+
 /* contacts*/
 .contacts .link {
     color: var(--primari-text-color);
-    padding: 32px 0;
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -115,13 +124,16 @@ a {
     display: flex;
     align-items: center;
     margin-left: auto;
-    padding: 32px 0;
 }
 .contacts .item + .item {
     margin-left: 50px;
 }
 
 /*header-container*/
+
+header {
+    border-bottom: 1px;
+}
 .header-container {
     display: flex;
     align-items: center;  
@@ -130,7 +142,8 @@ a {
 
 .main-nav {
     display: flex;
-    padding: 32px 0;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 /* HERO */
@@ -167,7 +180,6 @@ a {
 }
 .section {
     padding-top: 94px;
-    padding-bottom: 94px;
 }
 .title {
     margin-bottom: 10px;
@@ -301,7 +313,6 @@ flex-basis: calc(100% - 30px * 2 / 3);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 20px;
     margin-bottom: 4px;
 }
 .projects-list {
@@ -313,12 +324,17 @@ flex-basis: calc(100% - 30px * 2 / 3);
     flex-basis: calc(100% -30px * 2/ 3);
 }
 
+.item-wrapper {
+    border: 1px;
+    border-top: none;
+    padding: 20px 24px;
+}
+
 .text-title{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    margin-bottom: 20px;
 }
 .visually-hidden {
     position: absolute;
@@ -361,13 +377,7 @@ flex-basis: calc(100% - 30px * 2 / 3);
 .footer-cotacts .link-addres:focus {
 color: var(--accent-color);
 }
-.item-footer {
+.item-footer:not(:last-child) {
     margin-bottom: 9px;
 }
-.footer-cotacts {
-    margin-top: 20px;
-}
-.footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+
