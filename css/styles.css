@@ -36,7 +36,7 @@ img {
 }
 
 .container {
-    width: 1200px;
+    width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -53,10 +53,6 @@ img {
     margin-right: 93px;
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-}
 .accent{
     color: var(--title-text-color);
 }
@@ -89,6 +85,7 @@ a {
 /* site nave */
 .site-nave .link {
     color: var(--title-text-color);
+    display: block;
 }
 .site-nave .link:hover,
 .site-nave .link:focus {
@@ -100,12 +97,15 @@ a {
 .site-nave {
     display: flex;
     align-items: center;
-    margin-right: 344px;
+}
+.item-nav:not(:last-child) {
+    margin-right: 50px;
 }
 
 /* contacts*/
 .contacts .link {
     color: var(--primari-text-color);
+    padding: 32px 0;
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -114,23 +114,44 @@ a {
 .contacts {
     display: flex;
     align-items: center;
+    margin-left: auto;
+    padding: 32px 0;
+}
+.contacts .item + .item {
+    margin-left: 50px;
 }
 
-/* contacts-footer */
+/*header-container*/
+.header-container {
+    display: flex;
+    align-items: center;  
+    justify-content: flex-start;
+}
+
+.main-nav {
+    display: flex;
+    padding: 32px 0;
+}
 
 /* HERO */
 .hero {
     background-color: var(--cover-color);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
     color: var(--primari-bg-color);
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-align: center;
     text-transform: uppercase;
+}
+.hero-container {
     width: 696px;
 }
 /* stction */
@@ -142,10 +163,26 @@ a {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
-
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.title {
+    margin-bottom: 10px;
+}
+.technology-list {
+    display: flex;
+    gap: 30px;
+}
+.item-techno{
+flex-basis: calc(100% - 30px * 2 / 3);
+}
 .section-team {
-    background-color: var(--color-button)
+    background-color: var(--color-button);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 /* feature */
 
@@ -157,6 +194,13 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+.feature-list {
+    display: flex;
+}
+.feature-list .item:not(:last-child) {
+    margin-right: 30px; 
+}
+
 
 .text {
     font-weight: 400;
@@ -166,28 +210,43 @@ a {
     width: 270px;
 }
 .text-list {
+    text-align: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
 }
+
 /* team */
 
 .workers .team-list {
     color: var(--title-text-color);
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
 }
 .workers {
     background-color: var(--primari-bg-color);
+    display: flex;
+    gap: 30px;
 }
+.item-team {
+    flex-basis: calc(100% - 30px * 3 / 4);
+}
+
+
 /* button */
 
 .button {
     background-color: var(--accent-color);
     color: var(--primari-bg-color);
+    border: 1px solid transparent;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -196,26 +255,44 @@ a {
     cursor: pointer;
     padding: 10px 32px;
     border-radius: 4px;
+    display: inline;
 }
 .button:hover,
 .button:focus {
     background-color: var(--hero-button-color)
 }
+.portfolio-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+}
 .button-list {
     color: var(--title-text-color);
     background-color: var(--color-button);
+    border: 1px solid transparent;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    text-align: center;
     cursor: pointer;
+    padding: 6px 22px;
+    border-radius: 4px;
+    display: inline;
 }
+
 .button-list:hover,
 .button-list:focus {
     background-color: var(--accent-color);
     color: var(--primari-bg-color);
 }
+.section-button {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* projects-list */
 
 .projects-title {
@@ -224,6 +301,8 @@ a {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 .projects-list {
     display: flex;
@@ -239,6 +318,7 @@ a {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
+    margin-bottom: 20px;
 }
 .visually-hidden {
     position: absolute;
@@ -280,4 +360,14 @@ a {
 .footer-cotacts .link-addres:hover,
 .footer-cotacts .link-addres:focus {
 color: var(--accent-color);
+}
+.item-footer {
+    margin-bottom: 9px;
+}
+.footer-cotacts {
+    margin-top: 20px;
+}
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
