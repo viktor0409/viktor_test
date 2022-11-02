@@ -69,15 +69,16 @@ img {
 }
 
 /*address*/
+
 address {
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 
 .addres-color {
     background-color: var(--cover-color);
-    padding-top: 60px;
     padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 /* none */
@@ -132,7 +133,7 @@ a {
 /*header-container*/
 
 header {
-    border-bottom: 1px;
+    border-bottom: 1px Solid #ECECEC;
 }
 .header-container {
     display: flex;
@@ -193,6 +194,7 @@ header {
 .technology-list {
     display: flex;
     gap: 30px;
+    padding-bottom: 94px;
 }
 .item-techno{
 flex-basis: calc(100% - 30px * 2 / 3);
@@ -331,7 +333,7 @@ flex-basis: calc(100% - 30px * 2 / 3);
 }
 
 .item-wrapper {
-    border: 1px;
+    border: 1px Solid #EEEEEE;
     border-top: none;
     padding: 20px 24px;
 }
