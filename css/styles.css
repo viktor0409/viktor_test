@@ -114,12 +114,43 @@ a {
 
 
 /* contacts*/
-.contacts .link {
+.link-mail,
+.link-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--primari-text-color);
+
 }
-.contacts .link:hover,
-.contacts .link:focus {
+.link-mail:hover,
+.link-mail:focus {
     color: var(--accent-color);
+}
+.link-phone:hover,
+.link-phone:focus {
+    color: var(--accent-color);
+}
+.icon-link-mail {
+    fill: var(--primari-text-color);
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+}
+.icon-link-phone {
+    fill: var(--primari-text-color);
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+}
+
+.icon-link-mail:hover,
+.icon-link-mail:focus {
+    fill: var(--accent-color);
+}
+
+.icon-link-phone:hover,
+.icon-link-phone:focus {
+    fill: var(--accent-color);
 }
 .contacts {
     display: flex;
@@ -129,6 +160,7 @@ a {
 .contacts .item + .item {
     margin-left: 50px;
 }
+
 
 /*header-container*/
 
@@ -150,12 +182,15 @@ header {
 /* HERO */
 .hero {
     background-color: var(--cover-color);
-    background-image: url(../images/Background\ overlay.png);
+    background-image:
+    url(../images/Background\ overlay.png);
     max-width: 1600px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -163,17 +198,18 @@ header {
 
 .hero-title {
     color: var(--primari-bg-color);
-    margin-top: 0;
-    margin-bottom: 30px;
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.hero-container {
-    width: 696px;
-}
+
 /* stction */
 
 .section-title {
@@ -187,6 +223,10 @@ header {
 }
 .section {
     padding-top: 94px;
+    
+}
+.section-technology {
+    padding-bottom: 94px;
 }
 .title {
     margin-bottom: 10px;
@@ -194,7 +234,6 @@ header {
 .technology-list {
     display: flex;
     gap: 30px;
-    padding-bottom: 94px;
 }
 .item-techno{
 flex-basis: calc(100% - 30px * 2 / 3);
@@ -203,6 +242,38 @@ flex-basis: calc(100% - 30px * 2 / 3);
     background-color: var(--color-button);
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+/* clients*/
+.section-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients-link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+}
+.clients-link:hover,
+.clients-link:focus {
+    border-color: #2196F3;
+    color: #2196F3;
+}
+.clients-icon {
+    fill: currentColor;
 }
 /* feature */
 
@@ -217,10 +288,33 @@ flex-basis: calc(100% - 30px * 2 / 3);
 .feature-list {
     display: flex;
 }
-.feature-list .item:not(:last-child) {
+.item-list:not(:last-child) {
     margin-right: 30px; 
 }
 
+.widgets-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.widgets-link {
+    display: block;
+    height: 120px;
+    width: 270px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+
+.widgets-icon {
+    background-position: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
 
 .text {
     font-weight: 400;
@@ -235,7 +329,7 @@ flex-basis: calc(100% - 30px * 2 / 3);
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 /* team */
@@ -258,8 +352,38 @@ flex-basis: calc(100% - 30px * 2 / 3);
 }
 .item-team {
     flex-basis: calc(100% - 30px * 3 / 4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px
+
 }
 
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--primari-bg-color);
+    border-radius: 50%;
+}
+.socials-link:hover,
+.socials-link:focus {
+    background-color: #2196F3;
+}
+.socials-icon {
+    fill: #AFB1B8;
+}
+.socials-link:hover .socials-icon {
+    fill: var(--primari-bg-color);
+}
 
 /* button */
 
@@ -307,6 +431,9 @@ flex-basis: calc(100% - 30px * 2 / 3);
 .button-list:focus {
     background-color: var(--accent-color);
     color: var(--primari-bg-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .section-button {
     padding-top: 94px;
@@ -330,6 +457,9 @@ flex-basis: calc(100% - 30px * 2 / 3);
 }
 .projects-item {
     flex-basis: calc(100% -30px * 2/ 3);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .item-wrapper {
@@ -358,6 +488,7 @@ flex-basis: calc(100% - 30px * 2 / 3);
 }
 
 /* footer */
+
 .footer-cotacts .link {
     color: var(--primari-text-color);
     font-family: Roboto;
@@ -387,5 +518,44 @@ color: var(--accent-color);
 }
 .item-footer:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.socials-title {
+color: var(--primari-bg-color);
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+.section-footer {
+    display: flex;
+    gap: 70px;
+}
+
+.socials-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.socials-link-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.socials-link-footer:hover,
+.socials-link-footer:focus {
+    background-color: #2196F3;
+}
+.socials-icon-footer {
+    fill: var(--primari-bg-color)
+}
+.socials-link-footer:hover .socials-icon {
+    fill: var(--primari-bg-color);
 }
 
