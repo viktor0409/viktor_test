@@ -117,7 +117,7 @@ a {
 .link::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     display: block;
     width: 100%;
@@ -162,12 +162,18 @@ a {
     margin-right: 10px;
     width: 16px;
     height: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-phone {
     fill: var(--primari-text-color);
     margin-right: 10px;
     width: 10px;
     height: 16px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-mail:hover,
@@ -493,7 +499,7 @@ color: #FFFFFF;
     padding: 6px 22px;
     border-radius: 4px;
     display: inline;
-    transition-property: color, box-shadow;
+    transition-property: color, box-shadow, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -695,7 +701,7 @@ margin-bottom: 20px;
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
-    transition: opacity 2500ms linear, visibility 250ms linear;
+    transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 .backdrop.is-hidden {
