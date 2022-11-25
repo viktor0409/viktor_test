@@ -643,6 +643,15 @@ color: #FFFFFF;
 .footer-cotacts .link-addres:focus {
 color: var(--accent-color);
 }
+
+.item-footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .item-footer:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -754,12 +763,17 @@ margin-bottom: 20px;
 .close-btn-icon {
     width: 18px;
     height: 18px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn-icon:hover,
 .close-btn-icon:focus {
     fill: var(--accent-color);
 }
+
+
 
 /* subscription*/
 
@@ -791,6 +805,7 @@ margin-bottom: 20px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-left: 16px;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .subscription-btn {
@@ -893,7 +908,6 @@ margin-bottom: 20px;
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-bottom: 20px;
     cursor: pointer;
     outline: transparent;
 }
@@ -950,6 +964,7 @@ margin-bottom: 20px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    letter-spacing: 0.06em;
     cursor: pointer;
     border: 1px solid transparent;
     color: var(--primari-bg-color);
