@@ -1,0 +1,34 @@
+
+.feature__list {
+    display: flex;
+}
+
+.feature__item:not(:last-child) {
+    margin-right: 30px; 
+}
+
+.feature__link--widgets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.feature__icon--widgets {
+    background-position: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.feature__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    width: 270px;
+}
