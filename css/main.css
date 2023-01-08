@@ -99,9 +99,13 @@ a {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .hero__title {
