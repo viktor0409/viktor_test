@@ -75,6 +75,7 @@ img {
 
 address {
     margin-top: 20px;
+    margin-right: 70px;
 }
 
 
@@ -667,7 +668,6 @@ margin-bottom: 20px;
 }
 .section-footer {
     display: flex;
-    gap: 70px;
     align-items: baseline;
 }
 
@@ -675,6 +675,7 @@ margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-right: 93px;
 }
 .socials-link-footer {
     display: flex;
@@ -768,8 +769,8 @@ margin-bottom: 20px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn-icon:hover,
-.close-btn-icon:focus {
+.close-btn:hover,
+.close-btn:focus {
     fill: var(--accent-color);
 }
 
