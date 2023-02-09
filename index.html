@@ -60,7 +60,7 @@
                 <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
             <li class="feature-item">
-                <a href="" class="widgets-link">
+                <a href="#" class="widgets-link">
                 <svg class="widgets-icon" wight="70" height="70">
                     <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
@@ -69,7 +69,7 @@
                 <p  class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </li>
             <li class="feature-item">
-                <a href="" class="widgets-link">
+                <a href="#" class="widgets-link">
                 <svg class="widgets-icon" wight="70" height="70">
                     <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
@@ -78,7 +78,7 @@
                 <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
             <li class="feature-item">
-                <a href="" class="widgets-link">
+                <a href="#" class="widgets-link">
                 <svg class="widgets-icon" wight="70" height="70">
                     <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
@@ -297,42 +297,42 @@
                 <h2 class="section-title">Постійні клієнти</h2>
             <ul class="clients-list">
                 <li class="clients-item">
-                    <a class="clients-link" href="">
+                    <a class="clients-link" href="#">
                         <svg class="clients-icon" wight="106" height="60">
                             <use href="./images/icons.svg#company1"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="clients-item">
-                    <a class="clients-link" href="">
+                    <a class="clients-link" href="#">
                         <svg class="clients-icon" wight="106" height="60">
                             <use href="./images/icons.svg#company2"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="clients-item">
-                    <a class="clients-link" href="">
+                    <a class="clients-link" href="#">
                         <svg class="clients-icon" wight="106" height="60">
                             <use href="./images/icons.svg#company3"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="clients-item">
-                    <a class="clients-link" href="">
+                    <a class="clients-link" href="#">
                         <svg class="clients-icon" wight="106" height="60">
                             <use href="./images/icons.svg#company4"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="clients-item">
-                    <a class="clients-link" href="">
+                    <a class="clients-link" href="#">
                         <svg class="clients-icon" wight="106" height="60">
                             <use href="./images/icons.svg#company5"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="clients-item">
-                    <a class="clients-link" href="">
+                    <a class="clients-link" href="#">
                         <svg class="clients-icon" wight="106" height="60">
                             <use href="./images/icons.svg#company6"></use>
                         </svg>
@@ -424,7 +424,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden"  data-modal>
         <div class="modal">
             <button class="close-btn" type="button"
             data-modal-close>
@@ -434,38 +434,37 @@
             </button>
             <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
             <form class="modal-form">
-                <div class="form-group">
-                    <label for="text-name" class="form-label">Ім'я</label>
-                    <input class="from-input" type="text-name" id="text-name" name="person" placeholder=" ">
-                    <label class="from-field-name">   
+                    <label for="text-name" class="modal-form-label">
+                        <span class="form-label-text">Ім'я</span>
+                        <span class="form-group">
+                    <input class="from-input" type="text" id="text-name" name="person" placeholder=" ">
                         <svg class="form-icon" wight="18" height="18">
                             <use href="./images/icons.svg#icon-person-black"></use>
-                        </svg>
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label for="text-phone" class="form-label">Телефон</label>
-                    <input class="from-input" type="text-phone" id="text-phone" name="phone" placeholder=" ">
-                    <label class="from-field-name">
+                        </svg> 
+                        </span>  
+                    </label>            
+                    <label for="text-phone" class="modal-form-label">
+                        <span class="form-label-text">Телефон</span>
+                        <span class="form-group">
+                    <input class="from-input" type="phone" id="text-phone" name="phone" placeholder=" ">
                         <svg class="form-icon" wight="18" height="18">
                             <use href="./images/icons.svg#icon-phone-black"></use>
-                        </svg>
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label for="text-mail" class="form-label">Пошта</label>
-                    <input class="from-input" type="text-mail" name="e-mail" placeholder=" ">
-                    <label class="from-field-name">
+                        </svg> 
+                        </span>
+                    </label>             
+                    <label for="text-mail" class="modal-form-label">
+                        <span class="form-label-text">Пошта</span>
+                        <span class="form-group">
+                    <input class="from-input" type="mail" name="e-mail" placeholder=" ">
                         <svg class="form-icon" wight="18" height="18">
                             <use href="./images/icons.svg#icon-email-black"></use>
-                        </svg>
-                    </label>
-                </div>
-                <div class="form-group-comment">
-                    <label for="comment" class="form-label">Коментар
+                        </svg> 
+                        </span>
+                    </label>               
+                    <label for="comment" class="modal-form-comment">
+                        <span class="form-label-text">Коментар</span>
                         <textarea class="from-comment" name="comment" id="comment" rows="" placeholder="Введіть текст"></textarea>
                     </label>
-                </div>
                 <label class="from-agreement">
                     <input class="from-checkbox visually-hidden" type="checkbox" name="agreement-checkbox"/>
                     <svg class="from-checkbox-icon" wight="16" height="15">
