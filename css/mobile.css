@@ -14,10 +14,10 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-        url(../images/Background\ overlay.\ );
+        url(../images/Background\ overlay.\ tablet.png);
     }
 
-    /* @media (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
@@ -26,9 +26,13 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
             ),
-            url(../images/Background\ overlay.\ tablet-2x.png.png);
+            url(../images/Background\ overlay.\ tablet-2x.png);
+        }
     }
-} */
+
+    .menu-mobile {
+        width: 480px;
+    }
 
     .hero-title {
         width: 360px;
@@ -41,5 +45,49 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 1.9;
+    }
+
+    /* mobile-menu */
+
+    .container-mobile {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 40px;
+    }
+
+    .mobile-link {
+        font-size: 40px;
+        line-height: 1.17;
+    }
+
+    .link-phone-mobile {
+        font-size: 34px;
+        line-height: 1.11;
+    }
+
+    .link-mail-mobile {
+        font-size: 24px;
+        line-height: 1.16;
+    }
+
+    .socials-link-mobile {
+        font-size: 18px;
+        line-height: 1.22;
+    }
+
+    .socials-link-mobile:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    /* modal */
+
+    .modal {
+        width: 450px;
+        height: 609px;
+    }
+
+    .from-agreement-text {
+        font-size: 12px;
+        line-height: 1.16;
     }
 }

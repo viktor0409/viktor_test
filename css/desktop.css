@@ -4,6 +4,53 @@
         max-width: 1200px;
     }
 
+    .header-logo {
+        font-size: 26px;
+        line-height: 1.2;
+        margin-right: 93px;
+    }
+
+    .site-nave-list {
+        display: flex;
+        align-items: center; 
+    }
+
+    .site-nave-list .current {
+        color: var(--accent-color);
+    }
+
+    .contacts {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .item-mail {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+
+    .link-mail,
+    .link-phone {
+        display: flex;
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+    .icon-mail {
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;
+    }
+
+    .icon-phone {
+        margin-right: 10px;
+        width: 10px;
+        height: 16px;
+    }
+
+    /* hero */
+
     .hero {
         max-width: 1600px;
         height: 600px;
@@ -17,6 +64,7 @@
         font-size: 44px;
         line-height: 1.36;
     }
+    /* feature */
 
     .section-feature {
         padding-top: 94px; 
@@ -98,4 +146,73 @@
     .clients-item {
         width: calc((100% - 150px) / 6);
     }
+
+    .from-subscription .input {
+        width: 358px;
+        margin-right: 12px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .from-field {
+        display: flex;
+    }
+
+    /* footer */
+
+    .container-footer {
+        margin-bottom: 0;
+        
+    }
+
+    .section-footer  {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .logo-footer {
+        font-size: 26px;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .address-footer {
+        margin-right: 70px;
+        margin-left: auto;
+        margin-bottom: 0;
+        padding-left: 0;
+    } 
+
+    .section-socials {
+        margin-bottom: 0;
+        margin-right: 93px;
+    }
+
+    .list-cotacts {
+        text-align: left;
+    }
+
+    .socials-title {
+        text-align: left;
+    }
+
+    .text-subscription {
+        text-align: left;
+    }
+
+    .modal {
+        width: 530px;
+        height: 580px;
+    }
+
+    .from-comment {
+        width: 448px;
+    }
+
+    .from-agreement-text {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+    
 }

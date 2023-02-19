@@ -24,7 +24,7 @@
             </ul>
         </nav>
             <ul class="contacts">
-                <li class="item">
+                <li class="item-mail">
                     <a href="mailto:info@devstudio.com" class="link-mail" target="_blank" 
                     rel="noopener noreferrer nofollov"
                     >
@@ -33,13 +33,74 @@
                     </svg>
                     info@devstudio.com</a>
                 </li>
-                <li class="item">
+                <li class="item-phone">
                     <a href="tel:+380961111111" class="link-phone">
                         <svg class="icon-phone" wight="10" height="16">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="menu-btn-mobile" data-menu-open>
+                <svg class="burger-menu-open" wight="40" height="40">
+                    <use href="./images/icons.svg#burger-icon"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-mobile" data-menu>
+            <div class="container-mobile container">
+                <div>
+                <button class="close-btn-mobile" type="button"
+                data-menu-close>
+                <svg class="icon-close-mob" wight="40" height="40">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <ul class="mobile-list">
+                <li class="item-mobile"><a href="#" class="mobile-link current">Студія</a></li>
+                <li class="item-mobile"><a href="./portfolio.html" class="mobile-link">Портфоліо</a></li>
+                <li class="item-mobile"><a href="#" class="mobile-link">Контакти</a></li>               
+            </ul>
+        </div>
+        <div>
+            <ul class="contacts-mobile-list">
+                <li class="item-mobile-contacts">
+                    <a href="tel:+380961111111" class="link-phone-mobile">
+                    +38 096 111 11 11</a>
+                </li>
+                <li class="item-mobile-contacts">
+                    <a href="mailto:info@devstudio.com" class="link-mail-mobile" target="_blank" 
+                    rel="noopener noreferrer nofollov">
+                    info@devstudio.com</a>
+                </li>
+            </ul>
+            <div class="socials-mobile">
+                <a 
+                href="https://www.instagram.com" class="socials-link-mobile"
+                target="_blank" 
+                rel="noopener noreferrer nofollov"
+                aria-label="Instagram">Instagram
+                </a>
+                <a 
+                href="https://www.twitter.com" class="socials-link-mobile"
+                target="_blank" 
+                rel="noopener noreferrer nofollov"
+                aria-label="Twitter">Twitter
+                </a>
+                <a 
+                href="https://www.facebook.com" class="socials-link-mobile"
+                target="_blank" 
+                rel="noopener noreferrer nofollov"
+                aria-label="Facebook">Facebook
+                </a>
+                <a 
+                href="https://www.linkedin.com" class="socials-link-mobile"
+                target="_blank" 
+                rel="noopener noreferrer nofollov"
+                aria-label="Linkedin">LinkedIn
+                </a>
+            </div>
+        </div>
+        </div>
         </div>
     </header>
     <main>
@@ -122,7 +183,12 @@
             <h2 class="section-title">Наша команда</h2>
             <ul class="workers">
                 <li class="item-team">
-                    <img src="./images/empl1.jpg" alt="Ігор Дем'яненко" width="270" height="260">
+                    <img src="./images/empl1.jpg" 
+                    alt="Ігор Дем'яненко" 
+                    srcset="./images/empl1.jpg 1x, 
+                            ./images/empl1-2x.jpg 2x"
+                    width="270" 
+                    height="260">
                     <h3 class="team-title">Ігор Дем'яненко</h3>
                     <p class="text-team">Product Designer</p>
                     <div class="socials">
@@ -165,7 +231,11 @@
                 </div>
                 </li>
                 <li class="item-team">
-                    <img src="./images/empl2.jpg" alt="Ольга Рєпіна" width="270" height="260">
+                    <img src="./images/empl2.jpg" alt="Ольга Рєпіна"
+                    srcset="./images/empl2.jpg 1x, 
+                            ./images/empl2-2x.jpg 2x"
+                    width="270" 
+                    height="260">
                     <h3 class="team-title">Ольга Рєпіна</h3>
                     <p class="text-team">Frontend Developer</p>
                     <div class="socials">
@@ -208,7 +278,11 @@
                 </div>
                 </li>
                 <li class="item-team">
-                    <img src="./images/empl3.jpg" alt="Микола Тарасов" width="270" height="260">
+                    <img src="./images/empl3.jpg" alt="Микола Тарасов" 
+                    srcset="./images/empl3.jpg 1x, 
+                            ./images/empl3-2x.jpg 2x"
+                    width="270" 
+                    height="260">
                     <h3 class="team-title">Микола Тарасов</h3>
                     <p class="text-team">Marketing</p>
                     <div class="socials">
@@ -250,7 +324,10 @@
                     </a>
                 </div>
                 </li>
-                <li class="item-team"><img src="./images/empl4.jpg" alt="Михайло Єрмаков" width="270" height="260">
+                <li class="item-team"><img src="./images/empl4.jpg" alt="Михайло Єрмаков" 
+                    srcset="./images/empl4.jpg 1x, 
+                            ./images/empl4-2x.jpg 2x"
+                    width="270" height="260">
                     <h3 class="team-title">Михайло Єрмаков</h3>
                     <p class="text-team">UI Designer</p>
                     <div class="socials">
@@ -347,6 +424,7 @@
     </main>
     <footer class="general-footer">
         <div class="section-footer container">
+            <div class="container-footer">
         <div class="address-footer">
         <a href="#" class="logo-footer">Web<span class="accent-footer">Studio</span></a>
         <address>
@@ -412,6 +490,7 @@
                         </a>
                     </li>
                 </ul> 
+            </div>
             </div>
             <div class="from-subscription">
             <p class="text-subscription">Підпишіться на розсилку</p>  
@@ -480,6 +559,7 @@
             </form>
         </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
